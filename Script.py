@@ -23,9 +23,11 @@ print ("Zahl 2 / Zahl 1:", zahl2 / zahl1)
 for num in range(1,6):
     print (num)
 
+print (range(1,8))
+
 print (First_Name + " " + Last_Name)     
 
-char_list = list(Last_Name)
+char_list = list(Last_Name) 
 
 print (char_list)
 
