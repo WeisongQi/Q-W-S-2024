@@ -2,13 +2,13 @@
 print ("--------------Aufgabe 3.1---------------")
 
 
-zahle_a = input ("Bitte giben Sie ein Zahle a: ")
-zahle_b = input ("Bitte giben Sie ein Zahle b: ")
+zahle_a = int(input ("Bitte giben Sie ein Zahle a: "))
+zahle_b = int(input ("Bitte giben Sie ein Zahle b: "))
 
-add = (int(zahle_a) + int(zahle_b))
-sub = (int(zahle_a) - int(zahle_b))
-mul = (int(zahle_a) * int(zahle_b))
-div = (int(zahle_a) / int(zahle_b))
+add = zahle_a + zahle_b
+sub = zahle_a - zahle_b
+mul = zahle_a * zahle_b
+div = int (zahle_a / zahle_b)
 
 print  ("a ist", zahle_a, "; b ist", zahle_b,".")
 
