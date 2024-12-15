@@ -11,7 +11,8 @@ elif a < b:
     print(f"{a} < {b}")
 elif a == b:
     print(f"{a} = {b}")
-elif a != b:
+
+if a != b:
     print(f"{a} != {b}")
 
 if a > b or a == b:
@@ -31,3 +32,10 @@ elif a == b:
     print("a is equal to b.")
 elif a != b:
     print("a is not equal to b.") """
+
+""" # Aufgabe 2
+
+wart_a = input()
+wart_b = input()
+
+if wart_a == wart_b and  """
