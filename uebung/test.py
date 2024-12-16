@@ -42,3 +42,11 @@ print(f"{sub_list} und {mix_list}")
 
 length = len(mix_list)
 print(length) """
+
+
+def add(a, b):
+    return a + b
+
+
+sum = add(3, 5)
+print(f"{add(4, add(3,5))}")
