@@ -25,10 +25,10 @@ f_aufruf = input(
 )
 f_aufruf_up = f_aufruf.upper()
 
-x_int = input("Bitte geben Sie Zahl-A ein: ")
-y_int = input("Bitte geben Sie Zahl-B ein: ")
-x = int(x_int)
-y = int(y_int)
+# x_int = input("Bitte geben Sie Zahl-A ein: ")
+# y_int = input("Bitte geben Sie Zahl-B ein: ")
+x = int(input("Bitte geben Sie Zahl-A ein: "))
+y = int(input("Bitte geben Sie Zahl-B ein: "))
 
 if f_aufruf_up == "A":
     add(x, y)
