@@ -14,7 +14,7 @@
 
 
 # Name
-def fname():
+""" def fname():
     fname_inp = input("name")
 
     # print(fname_inp)
@@ -23,3 +23,22 @@ def fname():
 
 fname()
 fname()
+
+numbers = [1, 2, 3, 4, 5]
+
+fruits = ["apple", "banana", "cherry"]
+
+mix_list = [10, numbers, "orange", fruits]
+
+mix_list.append("blueberry")
+
+mix_list.insert(1, "annas")
+
+
+print(mix_list)
+
+sub_list = mix_list[0:4]
+print(f"{sub_list} und {mix_list}")
+
+length = len(mix_list)
+print(length) """
