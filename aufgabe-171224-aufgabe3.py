@@ -3,10 +3,10 @@
 
 # Definieren von Funktionen
 def num_input():
-    num = input("gib the number: ")
+    num = input()
 
     if num.isdigit():
-        print(float(num))
+        # print(float(num))
         return float(num)
     else:
         print("error")
@@ -15,13 +15,16 @@ def num_input():
 
 # Fläche eines Rechtecks
 def calc_area():
+    print("Enter a number for Width : ")
     w = num_input()
+    print("Enter a number for length : ")
     l = num_input()
     print(f"Die Fläche dieses Vierecks beträgt: {w * l}")
 
 
 # miles to KM
 def miles_to_KM():
+    print("Enter a number for miles : ")
     m = num_input()
     km = m * 1.60934
     # print(type(km))
@@ -30,6 +33,7 @@ def miles_to_KM():
 
 # KM to miles
 def KM_to_miles():
+    print("Enter a number for Kilometers : ")
     km = num_input()
     m = km / 1.60934
     # print(type(km))
@@ -38,6 +42,7 @@ def KM_to_miles():
 
 #  fahrenheit to celsius
 def fahrenheit_to_celsius():
+    print("Enter a number for fahrenheit : ")
     fahr = num_input()
     cels = (fahr - 32) * 5 / 9
     print(f"{cels} Grad Celsius = {fahr} Grad Fahrenheit")
@@ -68,8 +73,9 @@ def taschenrechner():
     f_aufruf = input(
         "Welche Rechenmethode wählen Sie: 1:Addition, 2:Subtraktion, 3:Multiplikation, 4:Division (A,S,M;D): "
     )
-
+    print("Enter a number : ")
     x = num_input()
+    print("Enter a number : ")
     y = num_input()
 
     if f_aufruf in ["A", "a", "1"]:
