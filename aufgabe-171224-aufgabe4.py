@@ -31,7 +31,7 @@ def main():
     rules = {"Schere": "Papier", "Papier": "Stein", "Stein": "Schere"}
     player_wins = 0
     computer_wins = 0
-    gleich = 0
+    tie = 0
     while True:
         player_choice = player_input()
         if player_choice is None:
@@ -41,7 +41,7 @@ def main():
 
         # win ?
         if com_player == player_choice:
-            print("Gleich")
+            print("draw")
             gleich += 1
         elif rules[player_choice] == com_player:
             print("Player win")
@@ -50,7 +50,7 @@ def main():
             print("Computer Win")
             computer_wins += 1
         print(
-            f"Aktueller Spielstand-Spieler: {player_wins} |Computer:{computer_wins} |Gleich:{gleich}"
+            f"Aktueller Spielstand-Spieler: {player_wins} |Computer:{computer_wins} |draw:{tie}"
         )
 
 
