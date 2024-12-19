@@ -41,13 +41,13 @@ def tage_bis_datum():
 # 4 Wochentag berechnen:
 def wochentag_berechnen():
     ruls = {
-        0: "Montag",
-        1: "Dienstag",
-        2: "Mittwoch",
-        3: "Donnestag",
-        4: "Freitag",
-        5: "Samstag",
-        6: "Sonntag",
+        1: "Montag",
+        2: "Dienstag",
+        3: "Mittwoch",
+        4: "Donnestag",
+        5: "Freitag",
+        6: "Samstag",
+        0: "Sonntag",
     }
     input_date_str = input("Pleace enter a Date (YYYY.MM.DD): ")
     input_date = datetime.strptime(input_date_str, "%Y.%m.%d")

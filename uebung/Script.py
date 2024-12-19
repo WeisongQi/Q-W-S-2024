@@ -1,4 +1,4 @@
-print ("Hallo Welt.")
+""" print ("Hallo Welt.")
 
 First_Name = "Anna"
 Last_Name = "Muster"
@@ -34,4 +34,19 @@ print (char_list)
 list_date = [1, 2, 3]
 tuple_date = tuple(list_date)
 
-print (tuple_date)
+print (tuple_date) """
+
+# 初始化计数器变量
+call_count = 0
+
+
+def my_function():
+    global call_count
+    call_count += 1
+    print(f"函数被调用的次数: {call_count}")
+
+
+# 调用函数
+my_function()  # 输出：函数被调用的次数: 1
+my_function()  # 输出：函数被调用的次数: 2
+my_function()  # 输出：函数被调用的次数: 3
