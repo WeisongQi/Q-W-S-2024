@@ -24,22 +24,46 @@ def tage_bis_jahresende():
 # 3 Benutzerdefiniertes Datum:
 
 
+# def tage_bis_datum():
+#     end_tag = datetime(2024, 12, 31)
+#     input_date_str = input("Pleace enter a Date (YYYY.MM.DD): ")
+#     input_date = datetime.strptime(input_date_str, "%Y.%m.%d")
+#     # print(type(input_date), input_date)
+#     # print(type(end_tag), end_tag)
+#     if input_date <= end_tag:
+#         diff_tags = end_tag - input_date
+#         print(diff_tags)
+#     elif input_date > end_tag:
+#         diff_tags = end_tag - input_date
+#         print(f"{abs(diff_tags)}")
+#         return tage_bis_datum()
+#     else:
+#         print("error")
+#         return tage_bis_datum()
+
+
 def tage_bis_datum():
-    end_tag = datetime(2024, 12, 31)
-    input_date_str = input("Pleace enter a Date (YYYY.MM.DD): ")
-    input_date = datetime.strptime(input_date_str, "%Y.%m.%d")
-    # print(type(input_date), input_date)
-    # print(type(end_tag), end_tag)
-    if input_date <= end_tag:
-        diff_tags = end_tag - input_date
-        print(diff_tags)
-    elif input_date > end_tag:
-        diff_tags = end_tag - input_date
-        print(f"{abs(diff_tags)}")
-        return tage_bis_datum()
-    else:
-        print("error")
-        return tage_bis_datum()
+    while True:
+        try:
+            # user input datum
+            datum_str = input("Bitte geben Sie ein Datum im Format TT.MM.JJJJ ein: ")
+
+            # stringer to datum
+            datum = datetime.strptime(datum_str, "%d.%m.%Y").date()
+
+            # today
+            heute = datetime.today().date()
+            print(f"{type (heute)}", heute)
+
+            # rechnen
+            differenz = (datum - heute).days
+            print(f"{type (differenz)}", differenz)
+
+            # output
+            print(f"Es sind {abs(differenz.days)} Tage von heute bis zum {datum_str}.")
+            break
+        except ValueError:
+            print("Ungültiges Datum. Bitte versuchen Sie es erneut.")
 
 
 # 4 Wochentag berechnen:

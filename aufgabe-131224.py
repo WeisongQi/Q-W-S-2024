@@ -23,7 +23,6 @@ input_date = datetime.strptime(input_date_str, "%Y.%m.%d")
 #    print("Pleace enter a Date (YYYY.MM.DD):")
 #    exit(1)
 
-
 # Check if the input date ist within any holyday interval
 holiday_found = False
 for holiday, (start, end) in holidays.items():
