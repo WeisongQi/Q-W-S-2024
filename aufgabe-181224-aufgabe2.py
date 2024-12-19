@@ -13,7 +13,7 @@ def aktuelles_datum_und_uhrzeit():
 # 2 Differenz bis zum Jahresende berechnen:
 def tage_bis_jahresende():
     heute = date.today()
-    end_of_year = date(2024, 12, 31)
+    end_of_year = date(date.today.year(), 12, 31)
     delta = end_of_year - heute
 
     # print(type(heute), heute)
@@ -33,6 +33,10 @@ def tage_bis_datum():
     if input_date <= end_tag:
         diff_tags = end_tag - input_date
         print(diff_tags)
+    elif input_date > end_tag:
+        diff_tags = end_tag - input_date
+        print(f"{abs(diff_tags)}")
+        return tage_bis_datum()
     else:
         print("error")
         return tage_bis_datum()
@@ -41,17 +45,18 @@ def tage_bis_datum():
 # 4 Wochentag berechnen:
 def wochentag_berechnen():
     ruls = {
-        1: "Montag",
-        2: "Dienstag",
-        3: "Mittwoch",
-        4: "Donnestag",
-        5: "Freitag",
-        6: "Samstag",
-        0: "Sonntag",
+        0: "Montag",
+        1: "Dienstag",
+        2: "Mittwoch",
+        3: "Donnestag",
+        4: "Freitag",
+        5: "Samstag",
+        6: "Sonntag",
     }
     input_date_str = input("Pleace enter a Date (YYYY.MM.DD): ")
     input_date = datetime.strptime(input_date_str, "%Y.%m.%d")
     wochentag_num = input_date.weekday()
+
     print(f"{input_date} ist {ruls[wochentag_num]}")
 
 
@@ -106,8 +111,8 @@ def zeit_in_zukunft():
 
 
 # Main
-aktuelles_datum_und_uhrzeit()
-tage_bis_jahresende()
-tage_bis_datum()
+# aktuelles_datum_und_uhrzeit()
+# tage_bis_jahresende()
+# tage_bis_datum()
 wochentag_berechnen()
-zeit_in_zukunft()
+# zeit_in_zukunft()
