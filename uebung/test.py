@@ -63,44 +63,56 @@ print(length) """
 # print(f"The day name for {date_object} is: {day_name}")
 
 
-import calendar
+# import calendar
 
-from datetime import datetime
-
-
-def wochentag_berechnen():
-    wochentag = input("Bitte nenne ein Datum ")
-    day = datetime.datetime.strptime(wochentag, "%d.%m.%Y").date()
-    print(f"Der {wochentag} ist ein {calendar.day_name[day.weekday()]}\n")
+# from datetime import datetime
 
 
-def tage_bis_datum():
-    while True:
-        try:
-            # user input datum
-            datum_str = input("Bitte geben Sie ein Datum im Format TT.MM.JJJJ ein: ")
+# def wochentag_berechnen():
+#     wochentag = input("Bitte nenne ein Datum ")
+#     day = datetime.datetime.strptime(wochentag, "%d.%m.%Y").date()
+#     print(f"Der {wochentag} ist ein {calendar.day_name[day.weekday()]}\n")
 
-            # stringer to datum
-            datum = datetime.strptime(datum_str, "%d.%m.%Y").date()
 
-            # today
-            heute = datetime.today().date()
-            print(f"{type (heute)}", heute)
+# def tage_bis_datum():
+#     while True:
+#         try:
+#             # user input datum
+#             datum_str = input("Bitte geben Sie ein Datum im Format TT.MM.JJJJ ein: ")
 
-            # rechnen
-            differenz = (datum - heute).days
-            print(f"{type (differenz)}", differenz)
+#             # stringer to datum
+#             datum = datetime.strptime(datum_str, "%d.%m.%Y").date()
 
-            # output
-            print(f"Es sind {abs(differenz.days)} Tage von heute bis zum {datum_str}.")
-            break
-        except ValueError:
-            print("Ungültiges Datum. Bitte versuchen Sie es erneut.")
+#             # today
+#             heute = datetime.today().date()
+#             print(f"{type (heute)}", heute)
+
+#             # rechnen
+#             differenz = (datum - heute).days
+#             print(f"{type (differenz)}", differenz)
+
+#             # output
+#             print(f"Es sind {abs(differenz.days)} Tage von heute bis zum {datum_str}.")
+#             break
+#         except ValueError:
+#             print("Ungültiges Datum. Bitte versuchen Sie es erneut.")
 
 
 # tage_bis_datum()
 
 # wochentag_berechnen()
 
-spieler_wahl = input("Deine Wahl: ").capitalize()
-print(f"{type spieler_wahl}", spieler_wahl)
+# spieler_wahl = input("Deine Wahl: ").capitalize()
+# print(f"{type spieler_wahl}", spieler_wahl)
+
+wochentag = [
+    "Montag",
+    "Dienstag",
+    "Mittwoch",
+    "Donnerstag",
+    "Freitag",
+    "Samstag",
+    "Sonntag",
+]
+wochentag.pop(4)
+print(wochentag)
