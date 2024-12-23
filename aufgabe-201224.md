@@ -50,9 +50,9 @@ Code-Beispiel:
     print("Der letzte Wochentag ist:", wochentage[-1])
 ```
 ---
---- Zeile 48 : Liste mit den Wochentagen erstellen und der Variablen `wochentage` zuweisen. Diese Liste besteht aus Zeichenketten **str**.
---- Zeile 49 : Der Wert an der Position 0 in der Liste `wochentage` wird ausgegeben.
---- Zeile 50 : Der Wert an der letzten Position in der Liste `wochentage` wird ausgegeben.
+-    Zeile 48 : Liste mit den Wochentagen erstellen und der Variablen `wochentage` zuweisen. Diese Liste besteht aus Zeichenketten **str**.
+-    Zeile 49 : Der Wert an der Position 0 in der Liste `wochentage` wird ausgegeben.
+-    Zeile 50 : Der Wert an der letzten Position in der Liste `wochentage` wird ausgegeben.
 
 
 ## Aufgabe 3: Entscheidungslogik erweitern (25 Punkte)
