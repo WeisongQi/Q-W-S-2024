@@ -100,7 +100,7 @@ Code-Beispiel:
         print("Die Zahl ist gerade.")
     else:
         print("Die Zahl ist ungerade.")
-    ```
+```
 
     - Schreibe die Arbeitsschritte auf.
 
