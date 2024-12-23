@@ -6,9 +6,9 @@ Code-Beispiel:
 
 ```python
     zahl = int(input("Gib eine Zahl ein: "))
-        if zahl > 10:
+    if zahl > 10:
         print("Die Zahl ist größer als 10.")
-        else:
+    else:
         print("Die Zahl ist 10 oder kleiner.")
 ```
 
