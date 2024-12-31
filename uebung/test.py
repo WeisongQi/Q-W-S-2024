@@ -105,14 +105,47 @@ print(length) """
 # spieler_wahl = input("Deine Wahl: ").capitalize()
 # print(f"{type spieler_wahl}", spieler_wahl)
 
-wochentag = [
-    "Montag",
-    "Dienstag",
-    "Mittwoch",
-    "Donnerstag",
-    "Freitag",
-    "Samstag",
-    "Sonntag",
-]
-wochentag.pop(4)
-print(wochentag)
+# wochentag = [
+#     "Montag",
+#     "Dienstag",
+#     "Mittwoch",
+#     "Donnerstag",
+#     "Freitag",
+#     "Samstag",
+#     "Sonntag",
+# ]
+# wochentag.pop(4)
+# print(wochentag)
+
+import math
+
+
+def distance(p1, p2):
+    return math.sqrt((p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2)
+
+
+# 测试点
+punkte = {0: (0, 0), 1: (3, 4), 2: (6, 8)}
+
+# 手动计算点之间的距离
+print("点 (0, 0) 和 (3, 4) 之间的距离:", distance(punkte[0], punkte[1]))  # 应该是 5
+print("点 (0, 0) 和 (6, 8) 之间的距离:", distance(punkte[0], punkte[2]))  # 应该是 10
+print("点 (3, 4) 和 (6, 8) 之间的距离:", distance(punkte[1], punkte[2]))  # 应该是 5
+
+dist_matrix = [[distance(punkte[i], punkte[j]) for j in punkte] for i in punkte]
+
+# 打印距离矩阵以验证
+
+print("距离矩阵:")
+
+for row in dist_matrix:
+    print(row)
+
+# allePunkt()
+# 2. Rechnen alle punkte differenz
+# def differenz(punkte):
+# differenz = {}
+# for t in range(16):
+#     differenz[t] = punkte[t + 1][0] - punkte[t][0], punkte[t + 1][1] - punkte[t][1]
+#     print(f"{differenz}")
+# return differenz
